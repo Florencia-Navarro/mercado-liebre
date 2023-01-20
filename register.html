@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>register</title>
+</head>
+<body class="registerHtml-body">
+    <main class="register-cont">
+     <form action="/index.html" method="post" enctype="multipart/form-data">
+      <fieldset class="register-section">
+        
+      
+        <label for="nombre"></label>
+        <input  type="text" name="nombre" placeholder="Nombre y apellido" required>
+        <label for="usuario"></label>
+        <input type="text" name="usuario"  placeholder="Nombre de usuario" required>
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Email" required>
+
+       
+
+        
+      </fieldset>
+      <fieldset class="personal-info-cont">
+        <legend>Fecha de nacimiento</legend>
+        <input type="date" name="fecha" required>
+        <label for="direccion"></label>
+        <input type="text" name="direccion" required placeholder="Domicilio">
+      </fieldset>
+      <fieldset class="perfil-cont">
+        <legend>Perfil de usuario</legend>
+        <input type="radio" name="perfil" value="comprador">
+        <p>Comprador</p>
+        <input type="radio" name="perfil" value="Vendedor" checked>
+        <p>Vendedor</p>
+
+      </fieldset>
+      <fieldset class="interests-cont">
+         <legend>Intereses</legend>
+        
+         <div>
+            <input type="checkbox" name="intereses" value="Electro">
+            <label>Electro</label>
+         </div>
+        
+           <div>
+            <input type="checkbox" name="intereses" value="moda">
+            <label>Moda</label>
+           </div>
+        
+           <div>
+            <input type="checkbox" name="intereses" value="hogar">
+            <label>Hogar</label>
+           </div>
+        
+            <div>
+                <input type="checkbox" name="intereses" value="jugueteria">
+            <label>Juguetería</label>
+            </div>
+            <div>
+                
+            <input type="checkbox" name="intereses" value="vida_sana">
+            <label>Vida sana</label>
+            </div>
+
+      </fieldset>
+      <fieldset class="profile-cont">
+        <legend>Foto de usuario</legend>
+        <input type="file" name="profile-img">
+        
+        <input type="password" name="password" placeholder="contraseña" required>
+        <input type="password" name="password" placeholder="confirmar contraseña" required>
+
+      </fieldset>
+      <fieldset class="buttons-cont">
+        <input  type="submit" >
+        <input type="reset" value="Borrar">
+      </fieldset>
+
+     </form>  
+
+    </main>
+    
+</body>
+</html>

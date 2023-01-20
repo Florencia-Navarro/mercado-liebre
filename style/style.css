@@ -24,8 +24,8 @@ header{
 }
 .logoAndSearch{
     display: flex;
-    width: 90%;
-}
+    width: 80%;
+} 
 .logo{
     width: 50%;
     
